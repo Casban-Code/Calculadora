@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIA 1</title>
+    <script>
+        function sumarInputs() {
+            const sumando1 = document.querySelector("#sumando1")
+            const sumando2 = document.querySelector("#sumando2")
+            const resultado = document.querySelector("#resultado")
+            const resultadosuma = Number(sumando1.value) + Number(sumando2.value) 
+
+            resultado.value = resultadosuma
+            return resultadosuma
+        }
+        
+
+        <!-- seleccionar 2 veces y control d-->
+    </script>
+</head>
+<body>
+   <table>
+    <tbody>
+        <tr>
+            <td><input type="number" onchange="sumarInputs()" name="sumando1" id="sumando1" placeholder="sumando1" value="5"></td>
+            <td><input type="number" onkeyup="sumarInputs()" name="sumando2" id="sumando2" placeholder="sumando1" value="10"></td>
+            <td><button type="button" onclick="sumarInputs()">Sumar</button></td>
+            <td><input type="number" name="resultado" id="resultado" placeholder="resultado"></td>
+        </tr> 
+    </tbody>
+   </table>
+</body>
+
+</html>
